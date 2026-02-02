@@ -78,6 +78,17 @@ function appleMapsUrl(dest, origin=null){
 }
 
 function primaryRouteUrl(dest, origin=null){
+  // Native app deep links first
+  if (isIOS()){
+    const d = encodeURIComponent(dest);
+    const o = origin ? `&saddr=${encodeURIComponent(origin)}` : '';
+    return `maps://?daddr=${d}${o}`;
+  } else if (/Android/i.test(navigator.userAgent)){
+    const d = encodeURIComponent(dest);
+    const o = origin ? `&origin=${encodeURIComponent(origin)}` : '';
+    return `geo:0,0?q=${d}${o}`;
+  }
+
   return isIOS() ? appleMapsUrl(dest, origin) : googleMapsUrl(dest, origin);
 }
 
