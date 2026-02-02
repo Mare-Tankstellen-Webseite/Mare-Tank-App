@@ -1,0 +1,1313 @@
+{
+  "meta": {
+    "version": "KW6",
+    "generated_at": "2026-02-02T16:54:08",
+    "coords_status": "missing (run geocode.py locally to fill)",
+    "sources": [
+      "Wochenpreis Diesel Ad Blue KW6.pdf",
+      "Tankstellennetz AS24 + Eurowag.pdf"
+    ]
+  },
+  "stations": [
+    {
+      "name": "Plose A Oil",
+      "adresse": "Innstraße 13, 6122 Fritzens",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.191,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": 0.689,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "INNTALER",
+      "adresse": "Endach 33-34, 6330 Kufstein",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.223,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": 0.567,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "TURMÖL,",
+      "adresse": "Nussdorf Drautal Bundesstr. 4, 9990 Debant Nussdorf",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.238,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": null,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "TRANS-o-PARK Mäder",
+      "adresse": "Industriestraße 7a, 6841 Mäder",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.213,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": 0.712,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "HÖRBRANZ",
+      "adresse": "Autobahn 2R, 6912 Hörbranz",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": true,
+        "eurowag_karte": false,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": 1.235,
+          "eurowag": null,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": 0.834,
+          "eurowag": null,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "Tankstelle Theo Webersdorfer GmbH",
+      "adresse": "Stadt Franz-Wolfram-Schwererstr. 38a, 5020 Salzburg",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.204,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": 0.612,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "Tankstelle Lagerhaus",
+      "adresse": "Lagerhausstr. 2, 5071 Wals",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.24,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": 1.154,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "Eni-HETTEGER",
+      "adresse": "Obergäu 310, 5440 Golling",
+      "oeffnungszeiten": "05.00-22.00",
+      "akzeptanz": {
+        "as24_karte": true,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": 1.218,
+          "eurowag": 1.227,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": 0.8342,
+          "eurowag": 0.677,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "Lagerhaus Genol Tankstelle.",
+      "adresse": "Industriestraße 8, 5600 St. Johann i. Pongau",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.24,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": null,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "Turmöl",
+      "adresse": "Salzburgerstr. 90, 5500 Bischofshofen",
+      "oeffnungszeiten": "05:30-22.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.238,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": null,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "AP Truck Mobility GmbH - Flachau",
+      "adresse": "Feuersang 337, 5542 Flachau",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": true,
+        "eurowag_karte": false,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.175,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": 0.701,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "Q8-Truck",
+      "adresse": "Wagrainerstr. 337, 5542 Flachau",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": true,
+        "eurowag_karte": false,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": 1.235,
+          "eurowag": null,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": 0.8342,
+          "eurowag": null,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "Lagerhaus Genol Tankstelle",
+      "adresse": "Gewerbestr. 12, 5671 Bruck an der Glocknerstraße",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.24,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": null,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "ARNOLDSTEIN EURONOVA INDUSTRIE PARK EURONOVA",
+      "adresse": "Industriestraße 8, 9601 Arnoldstein",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": true,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": 1.192,
+          "eurowag": 1.215,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": 0.667,
+          "eurowag": 0.655,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "ENI-GUTMANN Tankstelle",
+      "adresse": "Lindenweg 21, 9754 Steinfeld",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": false,
+        "gutmann_lieferant": true
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": null,
+          "gutmann": 1.2
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": null,
+          "gutmann": 1.2
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "Turmöl",
+      "adresse": "Gewerbestr. 8, 9112 Griffen",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.238,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": 0.927,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "Turmöl Tankautomat",
+      "adresse": "Umfahrungsstr. 23, 9100 Völkermarkt",
+      "oeffnungszeiten": "06.00-22.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.238,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": 0.927,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "Turmöl",
+      "adresse": "Grazerstr. 1, 9400 Wolfsberg",
+      "oeffnungszeiten": "07.00-22.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.238,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": null,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "dts Trading GmbH & Co.KG Paternion",
+      "adresse": "Paternion Gewerbepark, 9711 Paternion",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.223,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": 0.787,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "Diesel 24 Klagenfurt",
+      "adresse": "Bohrer-Straße 4, 9020 Klagenfurt",
+      "oeffnungszeiten": "06.30-21.30",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.234,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": 0.662,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "F. Leitner Mineralöle",
+      "adresse": "Anton Hermann Straße 3, 8073 Feldkirchen",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.263,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": 0.736,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "TURMÖL",
+      "adresse": "Kärntnerstr. 291, 8054 Graz",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.238,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": 0.927,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "F. Leitner Mineralöle",
+      "adresse": "Bundesstr. 40, 8472 Spielfeld",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.237,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": 0.662,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "AS 24 Tankstelle Sinabelkirchen",
+      "adresse": "Untergrossau 180, 8261 Sinabelkirchen",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.194,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": 0.517,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "Landforst Lagerhaus Sprint Tankstelle",
+      "adresse": "Leobner Straße 09, 8720 Knittelfeld",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.255,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": 0.736,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "Turmöl",
+      "adresse": "Zeltenschlagerstraße 2, 8700 Leoben",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.238,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": null,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "Turmöl Tankautomat",
+      "adresse": "im Ennstal Hohenfeld 89, 8967 Ennstal",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.238,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": null,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "master DIESEL Tankstellenbetriebs GmbH.",
+      "adresse": "Valentin Handelsstr. 7, 4300 St. Valentin",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.183,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": 0.517,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "Oldtimer Autohof Großtankstelle Oed",
+      "adresse": "Oldtimerweg 1, 3312 Oed bei Amstetten",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.238,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": 0.927,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "Čerpací stanice MAROLI",
+      "adresse": "Maroli - Drasenhofen K Vápence 609, 692 01 Mikulov",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.137,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": 1.073,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "Alland Gewerbestr. EXIT N°15",
+      "adresse": "Gewerbestr.15, 2534 Alland",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": true,
+        "eurowag_karte": false,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": 1.192,
+          "eurowag": null,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": 0.6667,
+          "eurowag": null,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "ARMEX - Hevlín II",
+      "adresse": "Laa an der Thaya Hevlin 471, CZ-67169 Hevlin",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.146,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": 0.837,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "AS24-Tankstelle",
+      "adresse": "Andiesen 17, 4975 Andiesen",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": true,
+        "eurowag_karte": false,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": 1.192,
+          "eurowag": null,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": 0.6667,
+          "eurowag": null,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "Lagerhaus Genol Tankstelle.",
+      "adresse": "Andiesen 13, 4774 St. Marienkirchen/Suben",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.196,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": 1.038,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "Diskont Tankstelle",
+      "adresse": "Othmar-Spanlang-Straße 1 4780 Brunnwies",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": false,
+        "gutmann_lieferant": true
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": null,
+          "gutmann": 1.2
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": null,
+          "gutmann": 1.2
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "Diskont Tankstelle",
+      "adresse": "Leinerstraße 4a 3300 Amstetten",
+      "oeffnungszeiten": "06.00-22.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": null,
+          "gutmann": 1.186
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": null,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "EUROWAG",
+      "adresse": "im Innkreis Kammer 44, 4981 Reichersberg",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.159,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": 0.417,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "Eurowag Lindach Truckpark",
+      "adresse": "Johannes Humer-Straße 2, 4663 Laakirchen",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.159,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": 0.417,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "PINK Tankstelle",
+      "adresse": "Pummererstraße 22, 4020 Linz",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.248,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": 0.557,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "AS 24-Tankstelle",
+      "adresse": "Nähe Wullowitz Linecká 263, 38241 Kaplice",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": true,
+        "eurowag_karte": false,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": 1.152,
+          "eurowag": null,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": 0.561,
+          "eurowag": null,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "master DIESEL Tankstellenbetriebs GmbH",
+      "adresse": "S1 Vorarlberger Allee 3, 1230 Wien",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.183,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": 0.753,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "Turmöl Tankstelle,",
+      "adresse": "Wienerstr. 5, 2203 Eibesbrunn",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.238,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": 0.927,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "Turmöl",
+      "adresse": "am See Untere Hauptstraße 87, 7100 Neusiedl am See",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.238,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": null,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "tankpool24",
+      "adresse": "Im Espel 1, 78187 Geisingen",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.333,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": 0.707,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "tankpool24 - Richter Pooltankstellen GmbH & Co. KG",
+      "adresse": "Am Waizenhof 10, 88317 Aichstetten",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.333,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": 0.707,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "Q1 Tankstelle",
+      "adresse": "Am Forlenspitzen 1, 76473 Iffezheim",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.31,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": 0.874,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "Esso Tankstelle",
+      "adresse": "im Breisgau Sundgauallee 25, 79114 Freiburg",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.464,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": null,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "tankpool24",
+      "adresse": "Frankenstraße 10, 71296 Heimsheim",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.333,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": 0.707,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "tankpool24",
+      "adresse": "Mühlenstraße 6, 79258 Hartheim am Rhein",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.333,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": 0.707,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    },
+    {
+      "name": "ESSO-Tankstelle in Neuenburg",
+      "adresse": "Westtanggente 2, 79395 Neuenburg am Rhein",
+      "oeffnungszeiten": "00.00-24.00",
+      "akzeptanz": {
+        "as24_karte": false,
+        "eurowag_karte": true,
+        "gutmann_lieferant": false
+      },
+      "preise": {
+        "diesel": {
+          "as24": null,
+          "eurowag": 1.409,
+          "gutmann": null
+        },
+        "adblue": {
+          "as24": null,
+          "eurowag": null,
+          "gutmann": null
+        }
+      },
+      "coords": {
+        "lat": null,
+        "lon": null
+      }
+    }
+  ]
+}
