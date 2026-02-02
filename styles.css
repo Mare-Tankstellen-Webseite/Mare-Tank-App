@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f3f3;
+}
+
+h1 {
+  background: #111;
+  color: #fff;
+  padding: 1rem;
+  margin: 0;
+}
+
+#stations {
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+}
