@@ -149,3 +149,65 @@ body{
   .select{min-width: 180px}
   .brand-title{font-size:20px}
 }
+
+/* Buttons */
+.btnrow{display:flex;gap:10px;flex-wrap:wrap}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  padding:10px 12px;
+  border-radius:12px;
+  text-decoration:none;
+  color:var(--text);
+  border:1px solid rgba(255,255,255,.16);
+  background: rgba(255,255,255,.10);
+  font-size:13px;
+  font-weight:700;
+}
+.btn:hover{background: rgba(255,255,255,.14)}
+.btn.secondary{
+  background: rgba(0,0,0,.25);
+  border-color: rgba(255,255,255,.12);
+}
+
+/* Buttons */
+.btnrow{display:flex;gap:10px;flex-wrap:wrap}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  padding:10px 12px;
+  border-radius:12px;
+  text-decoration:none;
+  color:var(--text);
+  border:1px solid rgba(255,255,255,.16);
+  background: rgba(255,255,255,.10);
+  font-size:13px;
+  font-weight:700;
+  cursor:pointer;
+}
+.btn:hover{background: rgba(255,255,255,.14)}
+.btn.secondary{
+  background: rgba(0,0,0,.25);
+  border-color: rgba(255,255,255,.12);
+}
+.btn.small{padding:8px 10px; font-size:12px; font-weight:700}
+.toast{
+  position: fixed;
+  left: 50%;
+  bottom: 16px;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,.70);
+  border: 1px solid rgba(255,255,255,.18);
+  color: rgba(248,250,252,.95);
+  padding: 10px 12px;
+  border-radius: 999px;
+  box-shadow: var(--shadow);
+  z-index: 50;
+  backdrop-filter: blur(10px);
+  display:none;
+}
+.toast.show{display:block}
