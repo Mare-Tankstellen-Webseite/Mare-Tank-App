@@ -1,0 +1,1014 @@
+{
+   "meta": {
+      "version": "KW6",
+      "generated_at": "2026-02-02T16:54:08",
+      "coords_status": "missing (run geocode.py locally to fill)",
+      "sources": [
+         "Wochenpreis Diesel Ad Blue KW6.pdf",
+         "Tankstellennetz AS24 + Eurowag.pdf"
+      ],
+      "labels": [
+         "as24",
+         "eurowag"
+      ],
+      "removed": [
+         "gutmann"
+      ],
+      "labels_source_pdf": "Tankstellennetz AS24 + Eurowag.pdf"
+   },
+   "stations": [
+      {
+         "name": "Plose A Oil",
+         "adresse": "Innstraße 13, 6122 Fritzens",
+         "oeffnungszeiten": "00.00-24.00",
+         "preise": {
+            "diesel": {
+               "as24": null,
+               "eurowag": 1.191
+            },
+            "adblue": {
+               "as24": null,
+               "eurowag": 0.689
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "INNTALER,",
+         "adresse": "Endach 33-34, 6330 Kufstein",
+         "oeffnungszeiten": "00.00-24.00",
+         "akzeptanz": {
+            "eurowag": true
+         },
+         "preise": {
+            "diesel": {
+               "eurowag": 1.223
+            },
+            "adblue": {
+               "eurowag": 0.567
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "TURMÖL",
+         "adresse": "Nussdorf Drautal Bundesstr. 4, 9990 Debant Nussdorf",
+         "oeffnungszeiten": "00.00-24.00",
+         "akzeptanz": {
+            "eurowag": true
+         },
+         "preise": {
+            "diesel": {
+               "eurowag": 1.238
+            },
+            "adblue": {
+               "eurowag": null
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "TRANS-o-PARK Mäder",
+         "adresse": "Industriestraße 7a, 6841 Mäder",
+         "oeffnungszeiten": "00.00-24.00",
+         "akzeptanz": {
+            "eurowag": true
+         },
+         "preise": {
+            "diesel": {
+               "eurowag": 1.213
+            },
+            "adblue": {
+               "eurowag": 0.712
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "HÖRBRANZ",
+         "adresse": "Autobahn 2R, 6912 Hörbranz",
+         "oeffnungszeiten": "00.00-24.00",
+         "akzeptanz": {
+            "as24": true
+         },
+         "preise": {
+            "diesel": {
+               "as24": 1.235
+            },
+            "adblue": {
+               "as24": 0.834
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "Salzburg",
+         "adresse": "Stadt Franz-Wolfram-Schwererstr. 38a, 5020 Salzburg",
+         "oeffnungszeiten": "00.00-24.00",
+         "preise": {
+            "diesel": {
+               "as24": null,
+               "eurowag": 1.204
+            },
+            "adblue": {
+               "as24": null,
+               "eurowag": 0.612
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "Wals",
+         "adresse": "Lagerhausstr. 2, 5071 Wals",
+         "oeffnungszeiten": "00.00-24.00",
+         "preise": {
+            "diesel": {
+               "as24": null,
+               "eurowag": 1.24
+            },
+            "adblue": {
+               "as24": null,
+               "eurowag": 1.154
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "HETTEGER",
+         "adresse": "Obergäu 310, 5440 Golling",
+         "oeffnungszeiten": "05.00-22.00",
+         "akzeptanz": {
+            "as24": true,
+            "eurowag": true
+         },
+         "preise": {
+            "diesel": {
+               "as24": 1.218,
+               "eurowag": 1.227
+            },
+            "adblue": {
+               "as24": 0.8342,
+               "eurowag": 0.677
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "St.",
+         "adresse": "Johann i. Pongau Industriestraße 8, 5600 St. Johann i. Pongau",
+         "oeffnungszeiten": "00.00-24.00",
+         "akzeptanz": {
+            "eurowag": true
+         },
+         "preise": {
+            "diesel": {
+               "eurowag": 1.24
+            },
+            "adblue": {
+               "eurowag": null
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "Bischofshofen",
+         "adresse": "Salzburgerstr. 90, 5500 Bischofshofen",
+         "oeffnungszeiten": "05:30-22.00",
+         "akzeptanz": {
+            "eurowag": true
+         },
+         "preise": {
+            "diesel": {
+               "eurowag": 1.238
+            },
+            "adblue": {
+               "eurowag": null
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "AUSTROPOL FLACHAU",
+         "adresse": "Feuersang 337, 5542 Flachau",
+         "oeffnungszeiten": "00.00-24.00",
+         "akzeptanz": {
+            "eurowag": true
+         },
+         "preise": {
+            "diesel": {
+               "eurowag": 1.175
+            },
+            "adblue": {
+               "eurowag": 0.701
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "AUSTROPOL FLACHAU",
+         "adresse": "Wagrainerstr. 337, 5542 Flachau",
+         "oeffnungszeiten": "00.00-24.00",
+         "akzeptanz": {
+            "as24": true
+         },
+         "preise": {
+            "diesel": {
+               "as24": 1.235
+            },
+            "adblue": {
+               "as24": 0.8342
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "LAGERHAUS",
+         "adresse": "Gewerbestr. 12, 5671 Bruck an der Glocknerstraße",
+         "oeffnungszeiten": "00.00-24.00",
+         "akzeptanz": {
+            "eurowag": true
+         },
+         "preise": {
+            "diesel": {
+               "eurowag": 1.24
+            },
+            "adblue": {
+               "eurowag": null
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "ARNOLDSTEIN EURONOVA INDUSTRIE PARK EURONOVA",
+         "adresse": "Industriestraße 8, 9601 Arnoldstein",
+         "oeffnungszeiten": "00.00-24.00",
+         "akzeptanz": {
+            "as24": true
+         },
+         "preise": {
+            "diesel": {
+               "as24": 1.192
+            },
+            "adblue": {
+               "as24": 0.667
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "Steinfeld",
+         "adresse": "Lindenweg 21, 9754 Steinfeld",
+         "oeffnungszeiten": "00.00-24.00",
+         "preise": {
+            "diesel": {
+               "as24": null,
+               "eurowag": null
+            },
+            "adblue": {
+               "as24": null,
+               "eurowag": null
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "Griffen",
+         "adresse": "Gewerbestr. 8, 9112 Griffen",
+         "oeffnungszeiten": "00.00-24.00",
+         "akzeptanz": {
+            "eurowag": true
+         },
+         "preise": {
+            "diesel": {
+               "eurowag": 1.238
+            },
+            "adblue": {
+               "eurowag": 0.927
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "Völkermarkt",
+         "adresse": "Umfahrungsstr. 23, 9100 Völkermarkt",
+         "oeffnungszeiten": "06.00-22.00",
+         "akzeptanz": {
+            "eurowag": true
+         },
+         "preise": {
+            "diesel": {
+               "eurowag": 1.238
+            },
+            "adblue": {
+               "eurowag": 0.927
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "Wolfsberg",
+         "adresse": "Grazerstr. 1, 9400 Wolfsberg",
+         "oeffnungszeiten": "07.00-22.00",
+         "akzeptanz": {
+            "eurowag": true
+         },
+         "preise": {
+            "diesel": {
+               "eurowag": 1.238
+            },
+            "adblue": {
+               "eurowag": null
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "Paternion Gewerbepark",
+         "adresse": "Paternion Gewerbepark, 9711 Paternion",
+         "oeffnungszeiten": "00.00-24.00",
+         "akzeptanz": {
+            "eurowag": true
+         },
+         "preise": {
+            "diesel": {
+               "eurowag": 1.223
+            },
+            "adblue": {
+               "eurowag": 0.787
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "Klagenfurt Ost Thomas,-",
+         "adresse": "Bohrer-Straße 4, 9020 Klagenfurt",
+         "oeffnungszeiten": "06.30-21.30",
+         "akzeptanz": {
+            "eurowag": true
+         },
+         "preise": {
+            "diesel": {
+               "eurowag": 1.234
+            },
+            "adblue": {
+               "eurowag": 0.662
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "Feldkirchen",
+         "adresse": "Anton Hermann Straße 3, 8073 Feldkirchen",
+         "oeffnungszeiten": "00.00-24.00",
+         "akzeptanz": {
+            "eurowag": true
+         },
+         "preise": {
+            "diesel": {
+               "eurowag": 1.263
+            },
+            "adblue": {
+               "eurowag": 0.736
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "TURMÖL",
+         "adresse": "Kärntnerstr. 291, 8054 Graz",
+         "oeffnungszeiten": "00.00-24.00",
+         "akzeptanz": {
+            "eurowag": true
+         },
+         "preise": {
+            "diesel": {
+               "eurowag": 1.238
+            },
+            "adblue": {
+               "eurowag": 0.927
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "Spielfeld",
+         "adresse": "Bundesstr. 40, 8472 Spielfeld",
+         "oeffnungszeiten": "00.00-24.00",
+         "akzeptanz": {
+            "eurowag": true
+         },
+         "preise": {
+            "diesel": {
+               "eurowag": 1.237
+            },
+            "adblue": {
+               "eurowag": 0.662
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "Sinabelkirchen",
+         "adresse": "Untergrossau 180, 8261 Sinabelkirchen",
+         "oeffnungszeiten": "00.00-24.00",
+         "akzeptanz": {
+            "eurowag": true
+         },
+         "preise": {
+            "diesel": {
+               "eurowag": 1.194
+            },
+            "adblue": {
+               "eurowag": 0.517
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "SPRINT/LEITNER",
+         "adresse": "Leobner Straße 09, 8720 Knittelfeld",
+         "oeffnungszeiten": "00.00-24.00",
+         "akzeptanz": {
+            "eurowag": true
+         },
+         "preise": {
+            "diesel": {
+               "eurowag": 1.255
+            },
+            "adblue": {
+               "eurowag": 0.736
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "Leoben",
+         "adresse": "Zeltenschlagerstraße 2, 8700 Leoben",
+         "oeffnungszeiten": "00.00-24.00",
+         "akzeptanz": {
+            "eurowag": true
+         },
+         "preise": {
+            "diesel": {
+               "eurowag": 1.238
+            },
+            "adblue": {
+               "eurowag": null
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "TURMÖL",
+         "adresse": "im Ennstal Hohenfeld 89, 8967 Haus im Ennstal",
+         "oeffnungszeiten": "00.00-24.00",
+         "akzeptanz": {
+            "eurowag": true
+         },
+         "preise": {
+            "diesel": {
+               "eurowag": 1.238
+            },
+            "adblue": {
+               "eurowag": null
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "St.",
+         "adresse": "Valentin Handelsstr. 7, 4300 St. Valentin",
+         "oeffnungszeiten": "00.00-24.00",
+         "akzeptanz": {
+            "eurowag": true
+         },
+         "preise": {
+            "diesel": {
+               "eurowag": 1.183
+            },
+            "adblue": {
+               "eurowag": 0.517
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "OLDTIMER",
+         "adresse": "Oldtimerweg 1, 3312 Oed bei Amstetten",
+         "oeffnungszeiten": "00.00-24.00",
+         "akzeptanz": {
+            "eurowag": true
+         },
+         "preise": {
+            "diesel": {
+               "eurowag": 1.238
+            },
+            "adblue": {
+               "eurowag": 0.927
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "Maroli - Drasenhofen K Vápence 609",
+         "adresse": "Maroli - Drasenhofen K Vápence 609, 692 01 Mikulov",
+         "oeffnungszeiten": "00.00-24.00",
+         "akzeptanz": {
+            "eurowag": true
+         },
+         "preise": {
+            "diesel": {
+               "eurowag": 1.137
+            },
+            "adblue": {
+               "eurowag": 1.073
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "Alland Gewerbestr. EXIT N°15",
+         "adresse": "Alland Gewerbestr. EXIT N°15, 2534 Alland",
+         "oeffnungszeiten": "00.00-24.00",
+         "akzeptanz": {
+            "as24": true
+         },
+         "preise": {
+            "diesel": {
+               "as24": 1.192
+            },
+            "adblue": {
+               "as24": 0.6667
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "ARMEX",
+         "adresse": "Laa an der Thaya Hevlin 471, CZ-67169 Hevlin",
+         "oeffnungszeiten": "00.00-24.00",
+         "akzeptanz": {
+            "eurowag": true
+         },
+         "preise": {
+            "diesel": {
+               "eurowag": 1.146
+            },
+            "adblue": {
+               "eurowag": 0.837
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "SUBEN",
+         "adresse": "Andiesen 17, 4975 Andiesen",
+         "oeffnungszeiten": "00.00-24.00",
+         "akzeptanz": {
+            "as24": true
+         },
+         "preise": {
+            "diesel": {
+               "as24": 1.192
+            },
+            "adblue": {
+               "as24": 0.6667
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "St.",
+         "adresse": "Marienkirchen/Suben Andiesen 13, 4774 St. Marienkirchen",
+         "oeffnungszeiten": "00.00-24.00",
+         "preise": {
+            "diesel": {
+               "as24": null,
+               "eurowag": 1.196
+            },
+            "adblue": {
+               "as24": null,
+               "eurowag": 1.038
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "Schärding",
+         "adresse": "Othmar-Spanlang-Straße 1 4780 Brunnwies",
+         "oeffnungszeiten": "00.00-24.00",
+         "preise": {
+            "diesel": {
+               "as24": null,
+               "eurowag": null
+            },
+            "adblue": {
+               "as24": null,
+               "eurowag": 1.2
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "Amstetten",
+         "adresse": "Leinerstraße 4a 3300 Amstetten",
+         "oeffnungszeiten": "06.00-22.00",
+         "preise": {
+            "diesel": {
+               "as24": null,
+               "eurowag": null
+            },
+            "adblue": {
+               "as24": null,
+               "eurowag": null
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "EUROWAG",
+         "adresse": "im Innkreis Kammer 44, 4981 Reichersberg",
+         "oeffnungszeiten": "00.00-24.00",
+         "akzeptanz": {
+            "eurowag": true
+         },
+         "preise": {
+            "diesel": {
+               "eurowag": 1.159
+            },
+            "adblue": {
+               "eurowag": 0.417
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "Laakirchen",
+         "adresse": "Johannes Humer-Straße 2, 4663 Laakirchen",
+         "oeffnungszeiten": "00.00-24.00",
+         "preise": {
+            "diesel": {
+               "as24": null,
+               "eurowag": 1.159
+            },
+            "adblue": {
+               "as24": null,
+               "eurowag": 0.417
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "PINK Tankstelle",
+         "adresse": "Pummererstraße 22, 4020 Linz",
+         "oeffnungszeiten": "00.00-24.00",
+         "akzeptanz": {
+            "eurowag": true
+         },
+         "preise": {
+            "diesel": {
+               "eurowag": 1.248
+            },
+            "adblue": {
+               "eurowag": 0.557
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "Nähe Wullowitz Linecká 263",
+         "adresse": "Nähe Wullowitz Linecká 263, 38241 Kaplice",
+         "oeffnungszeiten": "00.00-24.00",
+         "akzeptanz": {
+            "as24": true
+         },
+         "preise": {
+            "diesel": {
+               "as24": 1.152
+            },
+            "adblue": {
+               "as24": 0.561
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "Wien",
+         "adresse": "S1 Vorarlberger Allee 3, 1230 Wien",
+         "oeffnungszeiten": "00.00-24.00",
+         "akzeptanz": {
+            "eurowag": true
+         },
+         "preise": {
+            "diesel": {
+               "eurowag": 1.183
+            },
+            "adblue": {
+               "eurowag": 0.753
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "Turmöl - Eibesbrunn,",
+         "adresse": "Wienerstr. 5, 2203 Eibesbrunn",
+         "oeffnungszeiten": "00.00-24.00",
+         "akzeptanz": {
+            "eurowag": true
+         },
+         "preise": {
+            "diesel": {
+               "eurowag": 1.238
+            },
+            "adblue": {
+               "eurowag": 0.927
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "Neusiedl",
+         "adresse": "am See Untere Hauptstraße 87, 7100 Neusiedl am See",
+         "oeffnungszeiten": "00.00-24.00",
+         "akzeptanz": {
+            "eurowag": true
+         },
+         "preise": {
+            "diesel": {
+               "eurowag": 1.238
+            },
+            "adblue": {
+               "eurowag": null
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "Geisingen",
+         "adresse": "Im Espel 1, 78187 Geisingen",
+         "oeffnungszeiten": "00.00-24.00",
+         "akzeptanz": {
+            "eurowag": true
+         },
+         "preise": {
+            "diesel": {
+               "eurowag": 1.333
+            },
+            "adblue": {
+               "eurowag": 0.707
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "TP24 Aichstetten",
+         "adresse": "Am Waizenhof 10, 88317 Aichstetten",
+         "oeffnungszeiten": "00.00-24.00",
+         "akzeptanz": {
+            "eurowag": true
+         },
+         "preise": {
+            "diesel": {
+               "eurowag": 1.333
+            },
+            "adblue": {
+               "eurowag": 0.707
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "Iffezheim",
+         "adresse": "Am Forlenspitzen 1, 76473 Iffezheim",
+         "oeffnungszeiten": "00.00-24.00",
+         "akzeptanz": {
+            "eurowag": true
+         },
+         "preise": {
+            "diesel": {
+               "eurowag": 1.31
+            },
+            "adblue": {
+               "eurowag": 0.874
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "Freiburg",
+         "adresse": "im Breisgau Sundgauallee 25, 79114 Freiburg",
+         "oeffnungszeiten": "00.00-24.00",
+         "akzeptanz": {
+            "eurowag": true
+         },
+         "preise": {
+            "diesel": {
+               "eurowag": 1.464
+            },
+            "adblue": {
+               "eurowag": null
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "Heimsheim",
+         "adresse": "Frankenstraße 10, 71296 Heimsheim",
+         "oeffnungszeiten": "00.00-24.00",
+         "akzeptanz": {
+            "eurowag": true
+         },
+         "preise": {
+            "diesel": {
+               "eurowag": 1.333
+            },
+            "adblue": {
+               "eurowag": 0.707
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "Hartheim/Breisach",
+         "adresse": "Mühlenstraße 6, 79258 Hartheim am Rhein",
+         "oeffnungszeiten": "00.00-24.00",
+         "preise": {
+            "diesel": {
+               "as24": null,
+               "eurowag": 1.333
+            },
+            "adblue": {
+               "as24": null,
+               "eurowag": 0.707
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      },
+      {
+         "name": "Neuenburg",
+         "adresse": "Westtanggente 2, 79395 Neuenburg am Rhein",
+         "oeffnungszeiten": "00.00-24.00",
+         "preise": {
+            "diesel": {
+               "as24": null,
+               "eurowag": 1.409
+            },
+            "adblue": {
+               "as24": null,
+               "eurowag": null
+            }
+         },
+         "coords": {
+            "lat": null,
+            "lon": null
+         }
+      }
+   ]
+}

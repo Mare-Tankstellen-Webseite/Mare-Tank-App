@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Koordinaten holen (kostenlos) – Mare Tank App</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; padding: 16px; }
+    .card { border: 1px solid #e6e8ef; border-radius: 14px; padding: 14px; max-width: 960px; margin: 0 auto 14px; background: #fff; }
+    button { padding: 10px 12px; border-radius: 10px; border: 1px solid #d0d5dd; background: #101828; color: #fff; font-weight: 800; cursor: pointer; }
+    button:disabled { opacity: .5; cursor: not-allowed; }
+    .muted { color: #475467; font-size: 13px; }
+    pre { background: #f6f7fb; padding: 10px; border-radius: 10px; overflow: auto; }
+    .ok { color: #067647; font-weight: 800; }
+    .err { color: #b42318; font-weight: 800; }
+    .row { display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+    code { background:#f2f4f7; padding:2px 6px; border-radius:6px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2 style="margin-top:0">Koordinaten automatisch holen (kostenlos)</h2>
+    <div class="muted">
+      Holt <b>lat/lon</b> über <b>OpenStreetMap Nominatim</b> und schreibt sie in die JSON.
+      Danach: Route öffnet <b>sofort</b> mit Koordinaten + „Nächste Tankstelle“ funktioniert.
+      <br><br>
+      Datei: <code>../tankstellen_preise_kw6_50.json</code>
+      <br>
+      Hinweis: Wir machen ~1 Anfrage/Sekunde (rate-limit freundlich).
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="row">
+      <button id="startBtn">Start Geocoding (OSM)</button>
+      <button id="downloadBtn" disabled>Download aktualisierte JSON</button>
+    </div>
+    <div id="status" style="margin-top:10px"></div>
+    <pre id="log" style="display:none"></pre>
+  </div>
+
+  <div class="card">
+    <b>Nach Download:</b> Ersetze im Repo die Datei <code>tankstellen_preise_kw6_50.json</code> durch die heruntergeladene Version.
+    <div class="muted">Falls dein Browser OSM blockt (CORS), nutze alternativ <code>tools/geocode.html</code> (Google-Key).</div>
+  </div>
+
+  <script>
+    const JSON_PATH = "../tankstellen_preise_kw6_50.json";
+    const statusEl = document.getElementById("status");
+    const logEl = document.getElementById("log");
+    const startBtn = document.getElementById("startBtn");
+    const downloadBtn = document.getElementById("downloadBtn");
+    let data = null;
+
+    const setStatus = (html)=> statusEl.innerHTML = html;
+    const log = (line)=>{ logEl.style.display="block"; logEl.textContent += line + "\n"; };
+
+    async function loadData(){
+      const r = await fetch(JSON_PATH, { cache: "no-store" });
+      if (!r.ok) throw new Error("JSON nicht gefunden: " + JSON_PATH);
+      data = await r.json();
+    }
+
+    function hasCoords(s){
+      const c = s.coords;
+      return c && Number.isFinite(Number(c.lat)) && Number.isFinite(Number(c.lon));
+    }
+
+    async function geocodeOSM(address){
+      const url = `https://nominatim.openstreetmap.org/search?format=json&limit=1&q=${encodeURIComponent(address)}`;
+      const r = await fetch(url, { headers: { "Accept":"application/json" } });
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      const js = await r.json();
+      const it = js && js[0];
+      if (!it) return null;
+      return { lat: Number(it.lat), lon: Number(it.lon) };
+    }
+
+    function download(filename, content){
+      const blob = new Blob([content], {type:"application/json"});
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = filename;
+      a.click();
+      URL.revokeObjectURL(a.href);
+    }
+
+    startBtn.addEventListener("click", async ()=>{
+      try{
+        startBtn.disabled = true;
+        downloadBtn.disabled = true;
+        logEl.textContent = "";
+        logEl.style.display = "none";
+
+        await loadData();
+        const stations = data.stations || data.stationen || [];
+        const todo = stations.filter(s => !hasCoords(s) && (s.adresse || s.address));
+        setStatus(`<span class="ok">JSON geladen.</span> Tankstellen: <b>${stations.length}</b>. Zu geocoden: <b>${todo.length}</b>.`);
+
+        let ok=0, fail=0;
+        for (let i=0;i<stations.length;i++){
+          const s = stations[i];
+          if (hasCoords(s)) continue;
+          const addr = (s.adresse || s.address || "").trim();
+          if (!addr) continue;
+
+          setStatus(`Geocoding (OSM)… ${i+1}/${stations.length} • OK:${ok} FAIL:${fail}`);
+          try{
+            const c = await geocodeOSM(addr);
+            if (c && Number.isFinite(c.lat) && Number.isFinite(c.lon)){
+              s.coords = c; ok++; log("OK  " + addr + " -> " + c.lat + "," + c.lon);
+            } else {
+              fail++; log("FAIL(no result) " + addr);
+            }
+          } catch(e){
+            fail++; log("FAIL " + addr + " :: " + e.message);
+          }
+          await new Promise(r=>setTimeout(r, 1100));
+        }
+
+        data.updated_at = new Date().toISOString();
+        data.coords_source = "openstreetmap nominatim (one-time)";
+        setStatus(`<span class="ok">Fertig.</span> OK:${ok} FAIL:${fail}. Jetzt Download klicken.`);
+        downloadBtn.disabled = false;
+      } catch(e){
+        setStatus(`<span class="err">Fehler:</span> ${e.message}`);
+      } finally {
+        startBtn.disabled = false;
+      }
+    });
+
+    downloadBtn.addEventListener("click", ()=>{
+      download("tankstellen_preise_kw6_50.json", JSON.stringify(data, null, 2));
+    });
+  </script>
+</body>
+</html>

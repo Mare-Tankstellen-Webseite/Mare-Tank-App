@@ -1,15 +1,50 @@
 <!doctype html>
 <html lang="de">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mare Tank App</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mare Tank App Testversion 5.1.1</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Mare Tank App</h1>
-  <div id="status">lade Daten …</div>
-  <div id="stations"></div>
+  <header class="topbar">
+    <div class="brand">
+      <div class="title">Mare Tank App <span class="badge">Testversion 5.1.1</span></div>
+      <div class="subtitle">Diesel &amp; AdBlue – AS24 / Eurowag / Gutmann</div>
+    </div>
+    <div class="actions">
+      <button id="themeToggle" class="btn">🌙 / ☀️</button>
+      <input id="search" class="input" placeholder="Suche (Ort, Straße, PLZ) …" />
+      <select id="sort" class="input">
+        <option value="none">Sortierung: keine</option>
+        <option value="diesel_as24">Diesel AS24</option>
+        <option value="diesel_eurowag">Diesel Eurowag</option>
+        <option value="diesel_gutmann">Diesel Gutmann</option>
+        <option value="adblue_as24">AdBlue AS24</option>
+        <option value="adblue_eurowag">AdBlue Eurowag</option>
+        <option value="adblue_gutmann">AdBlue Gutmann</option>
+      </select>
+      <select id="sortDir" class="input">
+        <option value="asc">aufsteigend</option>
+        <option value="desc">absteigend</option>
+      </select>
+      <select id="filterPay" class="input">
+        <option value="all">Zahlkarte/Lieferant: alle</option>
+        <option value="as24">AS24 (Karte)</option>
+        <option value="eurowag">Eurowag (Karte)</option>
+        <option value="gutmann">Gutmann (Lieferant)</option>
+      </select>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="hint" id="hint"></div>
+    <div class="grid" id="list"></div>
+  </main>
+
+  <footer class="footer">
+    <span id="count"></span>
+  </footer>
 
   <script src="app.js"></script>
 </body>
