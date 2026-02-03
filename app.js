@@ -11,14 +11,9 @@ const el = {
 };
 
 let ALL = [];
-let CURRENT_POS = null;
+let CURRENT_POS = null; // {lat, lon}
 
 function norm(s){ return (s ?? '').toString().toLowerCase().trim(); }
-
-function isIOS(){
-  const ua = navigator.userAgent || '';
-  return /iPad|iPhone|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-}
 
 function toast(msg){
   if (!el.toast) return;
@@ -38,6 +33,11 @@ function fmtPrice(v){
   const n = Number(v);
   if (Number.isNaN(n)) return '-';
   return n.toFixed(3).replace('.', ',');
+}
+
+function fmtKm(km){
+  if (km === null || km === undefined || !Number.isFinite(km)) return '-';
+  return km.toFixed(1).replace('.', ',');
 }
 
 function minOf(obj){
@@ -64,34 +64,47 @@ function getDestination(s){
   return s?.adresse ?? '';
 }
 
-function googleMapsUrl(dest, origin=null){
-  const base = 'https://www.google.com/maps/dir/?api=1';
-  const d = `&destination=${encodeURIComponent(dest)}`;
+/* Google Maps links (works on phone/tablet/web) */
+function googleMapsSearchUrl(query){
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
+}
+function googleMapsDirUrl(dest, origin){
   const o = origin ? `&origin=${encodeURIComponent(origin)}` : '';
-  return base + o + d;
+  return `https://www.google.com/maps/dir/?api=1${o}&destination=${encodeURIComponent(dest)}`;
 }
-
-function appleMapsUrl(dest, origin=null){
-  const d = `daddr=${encodeURIComponent(dest)}`;
-  const o = origin ? `&saddr=${encodeURIComponent(origin)}` : '';
-  return `https://maps.apple.com/?${d}${o}`;
-}
-
 function primaryRouteUrl(dest, origin=null){
-  // Native app deep links first
-  if (isIOS()){
-    const d = encodeURIComponent(dest);
-    const o = origin ? `&saddr=${encodeURIComponent(origin)}` : '';
-    return `maps://?daddr=${d}${o}`;
-  } else if (/Android/i.test(navigator.userAgent)){
-    const d = encodeURIComponent(dest);
-    const o = origin ? `&origin=${encodeURIComponent(origin)}` : '';
-    return `geo:0,0?q=${d}${o}`;
-  }
-
-  return isIOS() ? appleMapsUrl(dest, origin) : googleMapsUrl(dest, origin);
+  // If origin (GPS) -> directions. Else -> search.
+  if (origin) return googleMapsDirUrl(dest, origin);
+  return googleMapsSearchUrl(dest);
 }
 
+/* Distance (Haversine) */
+function haversineKm(lat1, lon1, lat2, lon2){
+  const R = 6371;
+  const toRad = d => (d * Math.PI) / 180;
+  const dLat = toRad(lat2 - lat1);
+  const dLon = toRad(lon2 - lon1);
+  const a =
+    Math.sin(dLat/2) ** 2 +
+    Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLon/2) ** 2;
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+  return R * c;
+}
+
+function computeDistances(){
+  if (!CURRENT_POS) return;
+  for (const s of ALL){
+    const lat = s?.coords?.lat;
+    const lon = s?.coords?.lon;
+    if (typeof lat === 'number' && typeof lon === 'number'){
+      s._distKm = haversineKm(CURRENT_POS.lat, CURRENT_POS.lon, lat, lon);
+    } else {
+      s._distKm = Infinity;
+    }
+  }
+}
+
+/* GPS */
 function ensureGeo(){
   return new Promise((resolve, reject) => {
     if (CURRENT_POS) return resolve(CURRENT_POS);
@@ -108,24 +121,16 @@ function ensureGeo(){
   });
 }
 
-async function copyText(text){
+async function initGeoNonBlocking(){
   try{
-    if (navigator.clipboard && window.isSecureContext){
-      await navigator.clipboard.writeText(text);
-    } else {
-      const ta = document.createElement('textarea');
-      ta.value = text;
-      ta.style.position = 'fixed';
-      ta.style.left = '-9999px';
-      document.body.appendChild(ta);
-      ta.focus();
-      ta.select();
-      document.execCommand('copy');
-      document.body.removeChild(ta);
-    }
-    toast('Kopiert ✅');
+    // ask once on load (browser may prompt). If denied, we just don't show distances.
+    const pos = await ensureGeo();
+    toast('Standort aktiv ✅');
+    computeDistances();
+    apply(); // re-render with distances
   } catch {
-    prompt('Kopieren:', text);
+    // no prompt spam
+    el.status.textContent = `Stationen: ${ALL.length}`;
   }
 }
 
@@ -151,20 +156,23 @@ function render(list){
     const minAdblue = minOf(adblue);
 
     const dest = getDestination(s);
-    const addr = s.adresse ?? '';
-    const name = s.name ?? '';
+    const dist = (CURRENT_POS && Number.isFinite(s._distKm) && s._distKm !== Infinity) ? s._distKm : null;
+    const distTag = CURRENT_POS
+      ? `<span class="tag">📍 ${dist === null ? '-' : fmtKm(dist)} km</span>`
+      : '';
 
     const card = document.createElement('div');
     card.className = 'card';
     card.innerHTML = `
       <div class="card-head">
-        <div class="card-title">${name || '-'}</div>
-        <div class="card-sub">${addr || '-'}</div>
+        <div class="card-title">${s.name ?? '-'}</div>
+        <div class="card-sub">${s.adresse ?? '-'}</div>
       </div>
 
       <div class="card-body">
         <div class="row">
           ${openTag}
+          ${distTag}
           <span class="tag">Best Diesel: ${minDiesel === Infinity ? '-' : fmtPrice(minDiesel)} €</span>
         </div>
 
@@ -196,7 +204,6 @@ function render(list){
 
         <div class="btnrow">
           <button class="btn route-btn" data-dest="${encodeURIComponent(dest)}">🧭 Route</button>
-          <button class="btn secondary copy-btn" data-copy="${encodeURIComponent((name && addr) ? (name + ' — ' + addr) : (addr || name))}">📋 Name + Adresse kopieren</button>
         </div>
       </div>
     `;
@@ -206,18 +213,9 @@ function render(list){
 
   el.root.appendChild(frag);
 
-  // Copy
-  el.root.querySelectorAll('.copy-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const text = decodeURIComponent(btn.dataset.copy || '');
-      if (!text) return toast('Nichts zu kopieren');
-      copyText(text);
-    });
-  });
-
-  // One smart Route button:
-  // - tries GPS (origin=current position)
-  // - if denied/unavailable, opens route without origin
+  // Route button:
+  // - tries GPS for origin
+  // - if denied/unavailable, opens Google Maps search
   el.root.querySelectorAll('.route-btn').forEach(btn => {
     btn.addEventListener('click', async () => {
       const dest = decodeURIComponent(btn.dataset.dest || '');
@@ -228,7 +226,6 @@ function render(list){
         const origin = `${pos.lat},${pos.lon}`;
         window.open(primaryRouteUrl(dest, origin), '_blank', 'noopener,noreferrer');
       } catch {
-        // fallback
         window.open(primaryRouteUrl(dest), '_blank', 'noopener,noreferrer');
       }
     });
@@ -256,9 +253,13 @@ function apply(){
     list.sort((a,b) => minOf(a.preise?.diesel) - minOf(b.preise?.diesel));
   } else if (sortMode === 'adblue_asc'){
     list.sort((a,b) => minOf(a.preise?.adblue) - minOf(b.preise?.adblue));
+  } else if (sortMode === 'distance_asc'){
+    // Requires coords + GPS; missing coords go to bottom
+    list.sort((a,b) => (a._distKm ?? Infinity) - (b._distKm ?? Infinity));
   }
 
-  el.status.textContent = `Stationen: ${list.length} / ${ALL.length}`;
+  const gpsInfo = CURRENT_POS ? ' • Standort aktiv' : '';
+  el.status.textContent = `Stationen: ${list.length} / ${ALL.length}${gpsInfo}`;
   render(list);
 }
 
@@ -275,11 +276,17 @@ async function load(){
 
     ALL = data.stations;
 
+    // init distances placeholder
+    for (const s of ALL) s._distKm = Infinity;
+
     el.q.addEventListener('input', apply);
     el.sort.addEventListener('change', apply);
     el.onlyOpen.addEventListener('change', apply);
 
     apply();
+
+    // Non-blocking GPS (once)
+    initGeoNonBlocking();
   } catch (e){
     el.error.hidden = false;
     el.error.textContent = 'FEHLER: JSON nicht geladen (' + (e?.message ?? e) + ')';
@@ -288,8 +295,7 @@ async function load(){
   }
 }
 
-
-// 🌙☀️ Theme toggle
+/* 🌙☀️ Theme toggle (from previous version) */
 const themeBtn = document.getElementById('themeToggle');
 const savedTheme = localStorage.getItem('theme');
 
