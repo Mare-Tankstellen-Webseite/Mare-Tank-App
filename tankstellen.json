@@ -1,12 +1,17 @@
 {
   "meta": {
     "version": "KW7",
-    "generated_at": "2026-02-09T09:00:11.655396+00:00",
+    "generated_at": "2026-02-09T18:11:46.675838Z",
     "coords_status": "missing (run geocode.py locally to fill)",
     "sources": [
-      "Wochenpreis Diesel Ad Blue KW7.pdf",
+      "Wochenpreise_Tankstellen_KW7_.pdf",
       "tankstellen.json (base)"
-    ]
+    ],
+    "map": {
+      "enabled": true,
+      "shows_payment_cards": true,
+      "note": "Karte kann erst Marker anzeigen, sobald coords (lat/lon) gesetzt sind."
+    }
   },
   "stations": [
     {
@@ -27,13 +32,17 @@
         "adblue": {
           "as24": null,
           "eurowag": "0.689",
-          "gutmann": 1.20
+          "gutmann": "1.20"
         }
       },
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag",
+        "Gutmann"
+      ]
     },
     {
       "name": "INNTALER",
@@ -48,18 +57,22 @@
         "diesel": {
           "as24": null,
           "eurowag": "1.199",
-          "gutmann": 1.20
+          "gutmann": "1.20"
         },
         "adblue": {
           "as24": null,
           "eurowag": "0.567",
-          "gutmann": 1.20
+          "gutmann": "1.20"
         }
       },
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag",
+        "Gutmann"
+      ]
     },
     {
       "name": "TURMÖL,",
@@ -74,18 +87,22 @@
         "diesel": {
           "as24": null,
           "eurowag": "1.214",
-          "gutmann": 1.20
+          "gutmann": "1.20"
         },
         "adblue": {
           "as24": null,
           "eurowag": null,
-          "gutmann": 1.20
+          "gutmann": "1.20"
         }
       },
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag",
+        "Gutmann"
+      ]
     },
     {
       "name": "TRANS-o-PARK Mäder",
@@ -111,7 +128,11 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag",
+        "Gutmann"
+      ]
     },
     {
       "name": "HÖRBRANZ",
@@ -137,7 +158,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "AS24"
+      ]
     },
     {
       "name": "Tankstelle Theo Webersdorfer GmbH",
@@ -163,7 +187,11 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag",
+        "Gutmann"
+      ]
     },
     {
       "name": "Tankstelle Lagerhaus",
@@ -178,18 +206,22 @@
         "diesel": {
           "as24": null,
           "eurowag": "1.217",
-          "gutmann": 1.20
+          "gutmann": "1.20"
         },
         "adblue": {
           "as24": null,
           "eurowag": null,
-          "gutmann": 1.20
+          "gutmann": "1.20"
         }
       },
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag",
+        "Gutmann"
+      ]
     },
     {
       "name": "Eni-HETTEGER",
@@ -215,7 +247,11 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "AS24",
+        "Eurowag"
+      ]
     },
     {
       "name": "Lagerhaus Genol Tankstelle.",
@@ -241,7 +277,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag"
+      ]
     },
     {
       "name": "Turmöl",
@@ -267,15 +306,18 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag"
+      ]
     },
     {
       "name": "AP Truck Mobility GmbH - Flachau",
       "adresse": "Feuersang 337, 5542 Flachau",
       "oeffnungszeiten": "00.00-24.00",
       "akzeptanz": {
-        "as24_karte": true,
-        "eurowag_karte": false,
+        "as24_karte": false,
+        "eurowag_karte": true,
         "gutmann_karte": false
       },
       "preise": {
@@ -293,7 +335,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag"
+      ]
     },
     {
       "name": "Q8-Truck",
@@ -319,7 +364,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "AS24"
+      ]
     },
     {
       "name": "Lagerhaus Genol Tankstelle",
@@ -345,7 +393,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag"
+      ]
     },
     {
       "name": "ARNOLDSTEIN EURONOVA INDUSTRIE PARK EURONOVA",
@@ -371,7 +422,11 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "AS24",
+        "Eurowag"
+      ]
     },
     {
       "name": "ENI-GUTMANN Tankstelle",
@@ -397,7 +452,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Gutmann"
+      ]
     },
     {
       "name": "Turmöl",
@@ -423,7 +481,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag"
+      ]
     },
     {
       "name": "Turmöl Tankautomat",
@@ -449,7 +510,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag"
+      ]
     },
     {
       "name": "Turmöl",
@@ -475,7 +539,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag"
+      ]
     },
     {
       "name": "dts Trading GmbH & Co.KG Paternion",
@@ -501,7 +568,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag"
+      ]
     },
     {
       "name": "Diesel 24 Klagenfurt",
@@ -527,7 +597,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag"
+      ]
     },
     {
       "name": "F. Leitner Mineralöle",
@@ -553,7 +626,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag"
+      ]
     },
     {
       "name": "TURMÖL",
@@ -579,7 +655,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag"
+      ]
     },
     {
       "name": "F. Leitner Mineralöle",
@@ -605,7 +684,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag"
+      ]
     },
     {
       "name": "AS 24 Tankstelle Sinabelkirchen",
@@ -631,7 +713,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag"
+      ]
     },
     {
       "name": "Landforst Lagerhaus Sprint Tankstelle",
@@ -657,7 +742,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag"
+      ]
     },
     {
       "name": "Turmöl",
@@ -683,7 +771,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag"
+      ]
     },
     {
       "name": "Turmöl Tankautomat",
@@ -709,7 +800,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag"
+      ]
     },
     {
       "name": "master DIESEL Tankstellenbetriebs GmbH.",
@@ -735,7 +829,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag"
+      ]
     },
     {
       "name": "Oldtimer Autohof Großtankstelle Oed",
@@ -761,7 +858,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag"
+      ]
     },
     {
       "name": "Čerpací stanice MAROLI",
@@ -787,7 +887,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag"
+      ]
     },
     {
       "name": "Alland Gewerbestr. EXIT N°15",
@@ -813,7 +916,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "AS24"
+      ]
     },
     {
       "name": "ARMEX - Hevlín II",
@@ -839,7 +945,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag"
+      ]
     },
     {
       "name": "AS24-Tankstelle",
@@ -865,7 +974,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "AS24"
+      ]
     },
     {
       "name": "Lagerhaus Genol Tankstelle.",
@@ -891,7 +1003,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag"
+      ]
     },
     {
       "name": "Diskont Tankstelle",
@@ -899,7 +1014,7 @@
       "oeffnungszeiten": "00.00-24.00",
       "akzeptanz": {
         "as24_karte": false,
-        "eurowag_karte": false,
+        "eurowag_karte": true,
         "gutmann_karte": true
       },
       "preise": {
@@ -917,7 +1032,11 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag",
+        "Gutmann"
+      ]
     },
     {
       "name": "Diskont Tankstelle",
@@ -925,7 +1044,7 @@
       "oeffnungszeiten": "06.00-22.00",
       "akzeptanz": {
         "as24_karte": false,
-        "eurowag_karte": true,
+        "eurowag_karte": false,
         "gutmann_karte": false
       },
       "preise": {
@@ -943,7 +1062,8 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": []
     },
     {
       "name": "EUROWAG",
@@ -969,7 +1089,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag"
+      ]
     },
     {
       "name": "Eurowag Lindach Truckpark",
@@ -995,7 +1118,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag"
+      ]
     },
     {
       "name": "PINK Tankstelle",
@@ -1021,7 +1147,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag"
+      ]
     },
     {
       "name": "AS 24-Tankstelle",
@@ -1047,7 +1176,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "AS24"
+      ]
     },
     {
       "name": "master DIESEL Tankstellenbetriebs GmbH",
@@ -1073,7 +1205,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag"
+      ]
     },
     {
       "name": "Turmöl Tankstelle,",
@@ -1099,7 +1234,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag"
+      ]
     },
     {
       "name": "Turmöl",
@@ -1125,7 +1263,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag"
+      ]
     },
     {
       "name": "tankpool24",
@@ -1151,7 +1292,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag"
+      ]
     },
     {
       "name": "tankpool24 - Richter Pooltankstellen GmbH & Co. KG",
@@ -1177,7 +1321,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag"
+      ]
     },
     {
       "name": "Q1 Tankstelle",
@@ -1203,7 +1350,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag"
+      ]
     },
     {
       "name": "Esso Tankstelle",
@@ -1229,7 +1379,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag"
+      ]
     },
     {
       "name": "tankpool24",
@@ -1255,7 +1408,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag"
+      ]
     },
     {
       "name": "tankpool24",
@@ -1281,7 +1437,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag"
+      ]
     },
     {
       "name": "ESSO-Tankstelle in Neuenburg",
@@ -1307,7 +1466,10 @@
       "coords": {
         "lat": null,
         "lon": null
-      }
+      },
+      "payment_cards": [
+        "Eurowag"
+      ]
     }
   ]
 }
