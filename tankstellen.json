@@ -68,7 +68,7 @@
       "akzeptanz": {
         "as24_karte": false,
         "eurowag_karte": true,
-        "gutmann_karte": false
+        "gutmann_karte": true
       },
       "preise": {
         "diesel": {
